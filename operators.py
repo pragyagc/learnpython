@@ -68,10 +68,10 @@ if has_good_manner and not smokes:
   print("its not a hot day")
 
   #example 2
-  name ='pragya'
-  if len(name) < 3:
+name ='pragya'
+if len(name) < 3:
    print("name must be at least3 cahracter")
-  elif len(name) > 50:
+elif len(name) > 50:
    print("name must be a maximum of 50 character")
-  else:
+else:
    print("name look good")
