@@ -50,8 +50,5 @@ print(path1.glob('*.py'))     #we can search for file and directories in current
 # *.*  for all files
 
 
-# for file in path1.glob('*.py'):
-#     print(file)
-
-for file in path1.glob('*'):
-    print(file)
+for file in path1.glob('*.py'):
+        print(file)
