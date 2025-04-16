@@ -36,3 +36,33 @@ def greet(name):
     print(f'Hello, {name}')
 
 greet('pragya')
+
+
+#Create a function `factorial` that takes a number as an argument and returns its factorial.
+def factorial(num):
+    product = 1
+    for i in range(1,num+1):
+        product = product * i
+    return product
+
+factorial(3)
+
+#Define a class `Book` with attributes `title` and `author`. Include a method `display_info` that prints the book's title and author.
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+    
+    def display_info(self):
+        print(f"Title: {self.title}, Author: {self.author}")
+
+
+#Import Pandas and create a DataFrame from a dictionary where keys are column names and values are lists of column data.
+import pandas as pd
+profiles = {
+    'name':['Ram','Hari','Shyam','Bibek','sambhu'],
+    'age':[30,25,32,20,21],
+    'salary':[100000,60000,50000,32000,30000]
+}
+df = pd.DataFrame(profiles)
+print(df)
