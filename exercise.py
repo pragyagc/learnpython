@@ -66,3 +66,19 @@ profiles = {
 }
 df = pd.DataFrame(profiles)
 print(df)
+
+
+#Print the first few rows of the DataFrame.
+df.iloc[0]
+
+#Select and print a specific column from the DataFrame.
+df.iloc[1]
+
+#Import NumPy and create an array with numbers from 1 to 10.
+import numpy as np
+numbers = np.array([1,2,3,4,5,6,7,8,9,10])
+print(numbers)
+
+#Reshape this array to a 2x5 matrix and print it.
+new_numbers = numbers.reshape(2,5)
+print(new_numbers)
