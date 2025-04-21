@@ -59,7 +59,7 @@ print(output)
 
 
 ########
-import numpy as np
+
 
 b = np.array([[1.0,2.0,3.0],[3.0,4.0,5.0]])
 print(b)
@@ -99,14 +99,13 @@ j[1,1]=9
 i[1:-1, 1:-1] = j
 print(i)
 
-
 output = np.zeros((7,7))
 z = np.ones((5, 5))
 z[1, 1] = 5
 output[1:-1, 1:-1] = z
 print(output)
 
-
+import numpy as np
 a = np.array([1, 2, 3, 4, 5])
 b = a
 b[2] = 20
