@@ -33,3 +33,39 @@ def sum_list(nums):
     return sum
    
 print(sum_list(numbers))
+
+#Create a function `is_prime` that takes a number as an argument and returns `True` if the number is prime and `False` otherwise.
+def is_prime(num):
+    prime = True
+    for i in range(2,num//2):
+        if num % i == 0:
+            prime = False
+            break
+    return prime
+
+is_prime(4)
+
+#Define a class `Student` with attributes `name` and `grade`. Include a method `display_info` that prints the student's name and grade.
+class Student:
+    def __init__(self,name,grade):
+        self.name = name
+        self.grade = grade
+
+    def display_info(self):
+        print(f'Name:{self.name}, grade:{self.grade}')
+
+#Create an instance of the `Student` class and update the student's grade. Call the `display_info` method to display the updated information.
+s = Student('Ujjwal','A+')
+s.display_info()
+
+
+#Create a set with the numbers 1, 2, 3, 4, and 5. Add the number 6 to the set and print the updated set.
+s = {1,2,3,4,5}
+s.add(6)
+print(s)
+
+
+
+#Create another set with the numbers 4, 5, 6, 7, and 8. Find the intersection of the two sets and print the result.
+s2 = set((4, 5, 6, 7, 8))
+s.intersection(s2)
