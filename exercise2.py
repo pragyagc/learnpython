@@ -69,3 +69,22 @@ print(s)
 #Create another set with the numbers 4, 5, 6, 7, and 8. Find the intersection of the two sets and print the result.
 s2 = set((4, 5, 6, 7, 8))
 s.intersection(s2)
+
+#Create a dictionary with keys as the names of three subjects and values as the scores. Calculate and print the average score.
+scores = {
+    'Maths':90,
+    'English':89,
+    'Science':80
+}
+
+sum = 0
+for score in scores.values():
+    sum +=score
+average = sum / len(scores.items())
+print(average)
+
+
+
+#Update the score of one subject and remove another subject from the dictionary. Print the updated dictionary.
+scores['Maths'] = 85
+print(scores)
